@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg">
+
+    <TextView
+        android:id="@+id/tv_grant_cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grant_cash"
+        android:layout_marginTop="29.5dp"
+        android:layout_marginLeft="20.8dp"
+        android:fontFamily="@font/roboto"
+        android:textSize="9sp"
+        android:textColor="#b3ffffff"/>
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_below="@id/tv_grant_cash"
+        android:layout_marginTop="@dimen/padding_margin_10"
+        android:layout_marginLeft="23dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_toggle"
+            android:layout_width="8.5dp"
+            android:layout_height="8.5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_toggle"
+            android:tint="@android:color/white"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHOWING 0 RESULTS FOR "
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="11.3dp"/>
+        <TextView
+            android:id="@+id/tv_cari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="CARITAS"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="#ffffff"
+            android:layout_toEndOf="@id/tv_1"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@id/tv_1"/>
+<!--        <TextView-->
+<!--            android:id="@+id/tv_search_directory_near"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_toRightOf="@id/img_toggle"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="4.5dp"-->
+<!--            android:text="@string/near"-->
+<!--            android:textSize="9sp"-->
+<!--            android:fontFamily="@font/roboto"-->
+<!--            android:textColor="#ffffff"/>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ly_search_direcotry_radius"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="11.8dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_toRightOf="@id/tv_search_directory_near"-->
+<!--            android:background="@drawable/bg_radius_line"-->
+<!--            android:orientation="horizontal">-->
+<!--            <ImageView-->
+<!--                android:layout_width="10.3dp"-->
+<!--                android:layout_height="6dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_marginTop="9.8dp"-->
+<!--                android:layout_marginBottom="9.3dp"-->
+<!--                android:layout_marginLeft="9.3dp"-->
+<!--                android:src="@drawable/down_arrow"-->
+<!--                android:tint="@android:color/white"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_search_directory_radius"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="@dimen/padding_margin_5"-->
+<!--                android:text="@string/spinner_radius"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginRight="11dp"-->
+<!--                android:fontFamily="@font/roboto"-->
+<!--                android:textSize="9sp"-->
+<!--                android:textColor="#ffffff"/>-->
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/ly_search_direcotry_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.8dp"
+            android:layout_toRightOf="@id/tv_cari"
+            android:background="@drawable/bg_radius_line"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="10.3dp"
+                android:layout_height="6dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="9.8dp"
+                android:layout_marginBottom="9.3dp"
+                android:layout_marginLeft="9.3dp"
+                android:src="@drawable/down_arrow"
+                android:tint="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/tv_search_directory_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_margin_5"
+                android:text="@string/spinner_country"
+                android:layout_gravity="center"
+                android:layout_marginRight="11dp"
+                android:fontFamily="@font/roboto"
+                android:textSize="9sp"
+                android:textColor="#ffffff"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="@dimen/padding_margin_25"
+            android:layout_height="@dimen/padding_margin_25"
+            android:layout_toRightOf="@id/ly_search_direcotry_country"
+            android:src="@drawable/ic_search_round"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="21.5dp"
+            android:layout_marginLeft="@dimen/padding_margin_20"
+            android:tint="@color/white"/>
+    </RelativeLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_result_count"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="SHOWING 3 RESULTS FOR"-->
+<!--        android:layout_marginTop="16.5dp"-->
+<!--        android:layout_marginLeft="21.3dp"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:fontFamily="@font/roboto"-->
+<!--        android:textSize="12sp"-->
+<!--        android:layout_below="@id/rl_top"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_caritas"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="CARITAS"-->
+<!--        android:textSize="12sp"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:fontFamily="@font/roboto_bold"-->
+<!--        android:layout_toRightOf="@id/tv_result_count"-->
+<!--        android:layout_alignTop="@id/tv_result_count"-->
+<!--        android:layout_marginLeft="3dp"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_top">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fast_scroller_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/padding_margin_20"
+            android:layout_marginLeft="@dimen/padding_margin_15"
+            android:layout_marginRight="@dimen/padding_margin_15"
+            android:layout_marginBottom="@dimen/padding_margin_30"
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/contact_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</RelativeLayout>
